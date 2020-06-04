@@ -20,9 +20,9 @@ The train and test codes are available lines 7-107 and 113-148 of 'train_MMF.py'
 If you want to retrain this network, you should:
 - Please download and unzip the [dataset](https://mega.nz/folder/LQwVhZ4J#PNGzSnjkrqjPD4M7Td2jMA). 
 - In line 39, set `prepare_data_flag` to `True`. This variable controls whether prepare the training set as an H5 file. Once you have prepared the H5 file before, please set it to `False`, otherwise it will waste a long time to recreate the H5 file.
-- In line 41, input the path of the unzipped dataset.
+- In lines 41, 47, and 115, input the paths of the training, validation and testing datasets.
 - Run lines 7-107 for training.
 - Run lines 113-148 for testing.
 
 ### Test CU-Net with Pretrained Weights
-
+A pretrained weight file is provided. 
