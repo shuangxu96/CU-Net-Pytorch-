@@ -1,5 +1,5 @@
 # CU-Net-Pytorch-
-This is an unofficial code of Common and Unique information splitting network (CU-Net) with Pytorch. 
+This is an unofficial code of Common and Unique information splitting network (CU-Net) with Pytorch. The offcial code (Tensorflow version) is [here](https://github.com/cindydeng1991/TPAMI-CU-Net).
 
 ## Requirements
 - pytorch (my version is 1.3.0)
@@ -46,3 +46,13 @@ The train and test codes are available lines 7-107 and 113-148 of `train_MMF.py`
 
 ### Test CU-Net with Pretrained Weights
 A pretrained weight file is provided. If you do not want to retrain this model, please run `test_MMF.py`, in line 39 of which you should input the path of the testing dataset. 
+
+## Reference
+```
+@inproceedings{Deng2019deep,
+author = {Deng, Xin and Dragotti, Pier Luigi},
+title = {Deep Convolutional Neural Network for Multi-modal Image Restoration and Fusion},
+booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)},
+year= {2020}
+}
+```
