@@ -35,6 +35,16 @@ If you want to retrain this network, you should:
     │   └── ...
     └── ...
     
+
+    .
+    ├── ...
+    ├── test                    # Test files (alternatively `spec` or `tests`)
+    │   ├── benchmarks          # Load and stress tests
+    │   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
+    │   └── unit                # Unit tests
+    └── ...
+
+
 - In line 39, set `prepare_data_flag` to `True`. This variable controls whether prepare the training set as an H5 file. Once you have prepared the H5 file before, please set it to `False`, otherwise it will waste a long time to recreate the H5 file.
 - In lines 41, 47, and 115, input the paths of the training, validation and testing datasets.
 - Run lines 7-107 for training.
