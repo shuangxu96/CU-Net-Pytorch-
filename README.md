@@ -1,6 +1,11 @@
 # CU-Net-Pytorch-
 This is an unofficial code of Common and Unique information splitting network (CU-Net) with Pytorch. 
 
+## Requirements
+- pytorch (my version is 1.3.0)
+- kornia
+- tensorboardX
+- h5py
 
 ## Results
 We train the CU-Net on the Cave dataset for the multispectral and RGB image fusion task (2x upscaling). The Cave contains 32 scenes and they are divide into three parts for training, testing and validation. In the training phase, we crop images into small patches, and there are 28512 pairs of samples in total.  CU-Net (number of blocks=4, kernel size=7) is trained by Adam over 200 epochs with a batch size of 32. The initial learning rate is 1e-4, and it is decayed by 0.9 every 50 epochs. It takes around 23 hours on a computer with 2080ti GPU.
@@ -14,10 +19,8 @@ Note: In their paper, the optimal kernel size is 8. However, in pytorch, an even
 
 
 ## Train & Test
-The train and test codes are available lines 7-107 and 113-148 of 'train_MMF.py'. 
-
 ### Retrain and Test CU-Net
-If you want to retrain this network, you should:
+The train and test codes are available lines 7-107 and 113-148 of `train_MMF.py`. If you want to retrain this network, you should:
 - Please download and unzip the [dataset](https://mega.nz/folder/LQwVhZ4J#PNGzSnjkrqjPD4M7Td2jMA). My folder is organized as follows:
 ```
     mypath
