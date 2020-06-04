@@ -16,4 +16,7 @@ Note: In their paper, the optimal kernel size is 8. However, in pytorch, an even
 ## Train & Test
 The train and test codes are available lines 7-107 and 113-148 of 'train_MMF.py'. 
 
-https://mega.nz/folder/LQwVhZ4J#PNGzSnjkrqjPD4M7Td2jMA
+### Retrain CU-Net
+If you want to retrain this network, you should
+- Please download and unzip the [dataset](https://mega.nz/folder/LQwVhZ4J#PNGzSnjkrqjPD4M7Td2jMA). 
+- In line 39, set prepare_data_flag to True. This 
