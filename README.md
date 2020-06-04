@@ -16,7 +16,13 @@ Note: In their paper, the optimal kernel size is 8. However, in pytorch, an even
 ## Train & Test
 The train and test codes are available lines 7-107 and 113-148 of 'train_MMF.py'. 
 
-### Retrain CU-Net
-If you want to retrain this network, you should
+### Retrain and Test CU-Net
+If you want to retrain this network, you should:
 - Please download and unzip the [dataset](https://mega.nz/folder/LQwVhZ4J#PNGzSnjkrqjPD4M7Td2jMA). 
-- In line 39, set 'prepare_data_flag' to 'True'. This 
+- In line 39, set `prepare_data_flag` to `True`. This variable controls whether prepare the training set as an H5 file. Once you have prepared the H5 file before, please set it to `False`, otherwise it will waste a long time to recreate the H5 file.
+- In line 41, input the path of the unzipped dataset.
+- Run lines 7-107 for training.
+- Run lines 113-148 for testing.
+
+### Test CU-Net with Pretrained Weights
+
