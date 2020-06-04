@@ -19,4 +19,4 @@ The train and test codes are available lines 7-107 and 113-148 of 'train_MMF.py'
 ### Retrain CU-Net
 If you want to retrain this network, you should
 - Please download and unzip the [dataset](https://mega.nz/folder/LQwVhZ4J#PNGzSnjkrqjPD4M7Td2jMA). 
-- In line 39, set prepare_data_flag to True. This 
+- In line 39, set 'prepare_data_flag' to 'True'. This 
