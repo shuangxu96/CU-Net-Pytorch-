@@ -3,7 +3,7 @@ This is an unofficial code of Common and Unique information splitting network (C
 
 ## Requirements
 - pytorch (my version is 1.3.0)
-- kornia
+- kornia (used for computing PSNR and SSIM)
 - tensorboardX
 - h5py
 
