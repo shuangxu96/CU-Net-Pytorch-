@@ -19,19 +19,20 @@ The train and test codes are available lines 7-107 and 113-148 of 'train_MMF.py'
 ### Retrain and Test CU-Net
 If you want to retrain this network, you should:
 - Please download and unzip the [dataset](https://mega.nz/folder/LQwVhZ4J#PNGzSnjkrqjPD4M7Td2jMA). My folder is organized as follows:
-  > path1
-  >> train
-  >>> balloons.mat
-  >>> beads.mat
-  >>> ....
-  >> test
-  >>> real_and_fake_apples.mat
-  >>> real_and_fake_peppers.mat
-  >>> ...
-  >> validation
-  >>> paints.mat
-  >>> photo_and_face.mat
-  >>> ...
+      .
+    ├── train
+    │   ├── balloons.mat 
+    │   ├── beads.mat
+    │   └── ...
+    ├── test
+    │   ├── real_and_fake_apples.mat
+    │   ├── real_and_fake_peppers.mat
+    │   └── ...
+    ├── validation
+    │   ├── paints.mat
+    │   ├── photo_and_face.mat
+    │   └── ...
+    └──
 - In line 39, set `prepare_data_flag` to `True`. This variable controls whether prepare the training set as an H5 file. Once you have prepared the H5 file before, please set it to `False`, otherwise it will waste a long time to recreate the H5 file.
 - In lines 41, 47, and 115, input the paths of the training, validation and testing datasets.
 - Run lines 7-107 for training.
