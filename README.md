@@ -46,7 +46,7 @@ The train and test codes are available lines 7-107 and 113-148 of `train_MMF.py`
 - Run lines 113-148 for testing.
 
 ### Test CU-Net with Pretrained Weights
-A pretrained weight file is provided. If you do not want to retrain this model, please run `test_MMF.py`, in line 39 of which you should input the path of the testing dataset. 
+A pretrained weight file is provided. If you do not want to test this model, please run `test_MMF.py`, in line 39 of which you should input the path of the testing dataset. 
 
 ## Reference
 ```
